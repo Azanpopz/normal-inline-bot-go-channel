@@ -1,69 +1,61 @@
 class script(object):
 
 
-    START_MSG = """ <b>Hi {}
+    START_MSG = """ <b>ʜɪ {}
 
-You can call this as an Auto Filter Bot if you like :D
-
-This is Version 2 of Auto Filter Bot
-
-Bot gives button link to files in connected channels on query !
-
-No need to add filters for your files or movies from now on!
-
-For more click <i>help</i></b>"""
+⭕️ᴍᴏᴠɪᴇꜱ ʟᴏᴋᴀᴍ ᴀᴅᴠᴀɴᴄᴇ ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ʙᴏᴛ⭕️ <i>help</i></b>"""
 
 
-    HELP_MSG = """<b>How to use the bot??</b>
+    HELP_MSG = """<b>ʜᴏᴡ ᴛᴏ ᴜꜱᴇ ᴛʜᴇ ʙᴏᴛ??</b>
 
 <i>
-* Add bot to your group with admin rights.
+* ᴀᴅᴅ ʙᴏᴛ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ᴀᴅᴍɪɴ ʀɪɢʜᴛꜱ.
 
-* Add bot to channels which you want to link with <b>all admin rights</b>!
+* ᴀᴅᴅ ʙᴏᴛ ᴛᴏ ᴄʜᴀɴɴᴇʟꜱ ᴡʜɪᴄʜ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ʟɪɴᴋ ᴡɪᴛʜ <b>ᴀʟʟ ᴀᴅᴍɪɴ ʀɪɢʜᴛꜱ</b>!
 </i>
 
 
-<b>Bot Commands - Works in Group only</b>
-(You need to be a Auth User in order to use these commands)
+[<ʙ>ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅꜱ - ᴡᴏʀᴋꜱ ɪɴ ɢʀᴏᴜᴘ ᴏɴʟʏ
+(ʏᴏᴜ ɴᴇᴇᴅ ᴛᴏ ʙᴇ ᴀ ᴀᴜᴛʜ ᴜꜱᴇʀ ɪɴ ᴏʀᴅᴇʀ ᴛᴏ ᴜꜱᴇ ᴛʜᴇꜱᴇ ᴄᴏᴍᴍᴀɴᴅꜱ)
 
-* <code>/add channelid</code>  -  Links channel to your group.
-or
-* <code>/add @channelusername</code> - Links channel to your group.
+* <ᴄᴏᴅᴇ>/ᴀᴅᴅ ᴄʜᴀɴɴᴇʟɪᴅ  -  ʟɪɴᴋꜱ ᴄʜᴀɴɴᴇʟ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ.
+ᴏʀ
+* <ᴄᴏᴅᴇ>/ᴀᴅᴅ @ᴄʜᴀɴɴᴇʟᴜꜱᴇʀɴᴀᴍᴇ - ʟɪɴᴋꜱ ᴄʜᴀɴɴᴇʟ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ.
 
-<i>NOTE : You can get your channel ID from @ChannelidHEXbot </i>
-
-
-* <code>/del channelid</code>  -  Delinks channel from group
-or
-* <code>/del @channelusername</code>  -  Delinks channel from group
-
-<i>NOTE : You can get connected channel details by <code>/filterstats</code> </i>
+<ɪ>ɴᴏᴛᴇ : ʏᴏᴜ ᴄᴀɴ ɢᴇᴛ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ɪᴅ ꜰʀᴏᴍ @ᴄʜᴀɴɴᴇʟɪᴅʜᴇxʙᴏᴛ 
 
 
-* <code>/delall</code>  -  Removes all connected channels and filters from group!
+* <ᴄᴏᴅᴇ>/ᴅᴇʟ ᴄʜᴀɴɴᴇʟɪᴅ  -  ᴅᴇʟɪɴᴋꜱ ᴄʜᴀɴɴᴇʟ ꜰʀᴏᴍ ɢʀᴏᴜᴘ
+ᴏʀ
+* <ᴄᴏᴅᴇ>/ᴅᴇʟ @ᴄʜᴀɴɴᴇʟᴜꜱᴇʀɴᴀᴍᴇ  -  ᴅᴇʟɪɴᴋꜱ ᴄʜᴀɴɴᴇʟ ꜰʀᴏᴍ ɢʀᴏᴜᴘ
 
-<i>Note : Dont add command delete bots in group! Otherwise, delall command wont work</i>
-
-
-* <code>/filterstats</code>  -  Check connected channels and number of filters.
-
+<ɪ>ɴᴏᴛᴇ : ʏᴏᴜ ᴄᴀɴ ɢᴇᴛ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴄʜᴀɴɴᴇʟ ᴅᴇᴛᴀɪʟꜱ ʙʏ <ᴄᴏᴅᴇ>/ꜰɪʟᴛᴇʀꜱᴛᴀᴛꜱ 
 
 
-No need add each filter again!
-Bot will automatically search for your files and give links to that!
+* <ᴄᴏᴅᴇ>/ᴅᴇʟᴀʟʟ  -  ʀᴇᴍᴏᴠᴇꜱ ᴀʟʟ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴄʜᴀɴɴᴇʟꜱ ᴀɴᴅ ꜰɪʟᴛᴇʀꜱ ꜰʀᴏᴍ ɢʀᴏᴜᴘ!
+
+<ɪ>ɴᴏᴛᴇ : ᴅᴏɴᴛ ᴀᴅᴅ ᴄᴏᴍᴍᴀɴᴅ ᴅᴇʟᴇᴛᴇ ʙᴏᴛꜱ ɪɴ ɢʀᴏᴜᴘ! ᴏᴛʜᴇʀᴡɪꜱᴇ, ᴅᴇʟᴀʟʟ ᴄᴏᴍᴍᴀɴᴅ ᴡᴏɴᴛ ᴡᴏʀᴋ
 
 
-<b>© @TroJanzHEX</b>"""
+* <ᴄᴏᴅᴇ>/ꜰɪʟᴛᴇʀꜱᴛᴀᴛꜱ  -  ᴄʜᴇᴄᴋ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴄʜᴀɴɴᴇʟꜱ ᴀɴᴅ ɴᴜᴍʙᴇʀ ᴏꜰ ꜰɪʟᴛᴇʀꜱ.]
 
 
-    ABOUT_MSG = """⭕️<b>My Name : Auto Filter Bot V2</b>
+
+[ɴᴏ ɴᴇᴇᴅ ᴀᴅᴅ ᴇᴀᴄʜ ꜰɪʟᴛᴇʀ ᴀɢᴀɪɴ!
+ʙᴏᴛ ᴡɪʟʟ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ꜱᴇᴀʀᴄʜ ꜰᴏʀ ʏᴏᴜʀ ꜰɪʟᴇꜱ ᴀɴᴅ ɢɪᴠᴇ ʟɪɴᴋꜱ ᴛᴏ ᴛʜᴀᴛ!
+
+
+<b>© @chakkamanga"""
+
+
+    ᴀʙᴏᴜᴛ_ᴍꜱɢ = """⭕️<b>ᴍʏ ɴᴀᴍᴇ : ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ʙᴏᴛ ᴠ2
     
-⭕️<b>Creater :</b> @TroJanzHEX
+⭕️<ʙ>ᴄʀᴇᴀᴛᴇʀ : @chakkamanga
 
-⭕️<b>Language :</b> <code>Python3</code>
+⭕️<ʙ>ʟᴀɴɢᴜᴀɢᴇ : <ᴄᴏᴅᴇ>ᴘʏᴛʜᴏɴ3
 
-⭕️<b>Library :</b> <a href='https://docs.pyrogram.org/'>Pyrogram 1.0.7</a> 
+⭕️<ʙ>ʟɪʙʀᴀʀʏ : <ᴀ ʜʀᴇꜰ='ʜᴛᴛᴘꜱ://ᴅᴏᴄꜱ.ᴘʏʀᴏɢʀᴀᴍ.ᴏʀɢ/'>ᴘʏʀᴏɢʀᴀᴍ 1.0.7 
 
-⭕️<b>Tutorial Video :</b> <a href='https://youtu.be/KQVYQAOsFYY'>Video Link</a> 
+⭕️<ʙ>ᴛᴜᴛᴏʀɪᴀʟ ᴠɪᴅᴇᴏ : <ᴀ ʜʀᴇꜰ='ʜᴛᴛᴘꜱ://ʏᴏᴜᴛᴜ.ʙᴇ/ᴋQᴠʏQᴀᴏꜱꜰʏʏ'>ᴠɪᴅᴇᴏ ʟɪɴᴋ 
 
-"""
+"""]
