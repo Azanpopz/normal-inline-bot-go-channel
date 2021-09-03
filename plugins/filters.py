@@ -175,9 +175,9 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         elif query.data == "start_data":
             await query.answer()
             keyboard = InlineKeyboardMarkup([
-                [InlineKeyboardButton("HELP", callback_data="help_data"),
-                    InlineKeyboardButton("ABOUT", callback_data="about_data")],
-                [InlineKeyboardButton("⭕️ JOIN OUR CHANNEL ⭕️", url="https://t.me/TroJanzHEX")]
+                [InlineKeyboardButton("⭕️ ＨＥＬＰ ⭕️", callback_data="help_data"),
+                    InlineKeyboardButton("⭕️ ＡＢＯＵＴ ⭕️", callback_data="about_data")],
+                [InlineKeyboardButton("⭕️ ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ ⭕️", url="https://t.me/mazhatthullikal")]
             ])
 
             await query.message.edit_text(
@@ -190,9 +190,9 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         elif query.data == "help_data":
             await query.answer()
             keyboard = InlineKeyboardMarkup([
-                [InlineKeyboardButton("BACK", callback_data="start_data"),
-                    InlineKeyboardButton("ABOUT", callback_data="about_data")],
-                [InlineKeyboardButton("⭕️ SUPPORT ⭕️", url="https://t.me/TroJanzSupport")]
+                [InlineKeyboardButton("⭕️ＢＡＣＫ⭕️", callback_data="start_data"),
+                    InlineKeyboardButton("⭕️ ＡＢＯＵＴ ⭕️", callback_data="about_data")],
+                [InlineKeyboardButton("⭕️ＳＵＰＰＯＲＴ⭕️", url="https://t.me/movieslokam2")]
             ])
 
             await query.message.edit_text(
