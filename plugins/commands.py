@@ -45,7 +45,7 @@ async def help(client, message):
                     ],
                     [
                         InlineKeyboardButton(
-                            "⭕️ SUPPORT ⭕️", url="https://t.me/MOVIESLOKAM2")
+                            "⭕️ＳＵＰＰＯＲＴ⭕️", url="https://t.me/MOVIESLOKAM2")
                     ]
                 ]
             ),
