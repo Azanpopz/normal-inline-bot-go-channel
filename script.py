@@ -6,56 +6,33 @@ class script(object):
 ⭕️ᴍᴏᴠɪᴇꜱ ʟᴏᴋᴀᴍ ᴀᴅᴠᴀɴᴄᴇ ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ʙᴏᴛ⭕️ <i>help</i></b>"""
 
 
-    HELP_MSG = """<b>ʜᴏᴡ ᴛᴏ ᴜꜱᴇ ᴛʜᴇ ʙᴏᴛ??</b>
-
+HELP_MSG = """<b>How to use the bot??</b>
 <i>
-* ᴀᴅᴅ ʙᴏᴛ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ᴀᴅᴍɪɴ ʀɪɢʜᴛꜱ.
-
-* ᴀᴅᴅ ʙᴏᴛ ᴛᴏ ᴄʜᴀɴɴᴇʟꜱ ᴡʜɪᴄʜ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ʟɪɴᴋ ᴡɪᴛʜ <b>ᴀʟʟ ᴀᴅᴍɪɴ ʀɪɢʜᴛꜱ</b>!
+* Add bot to your group with admin rights.
+* Add bot to channels which you want to link with <b>all admin rights</b>!
 </i>
+<b>Bot Commands - Works in Group only</b>
+(You need to be a Auth User in order to use these commands)
+* <code>/add channelid</code>  -  Links channel to your group.
+or
+* <code>/add @channelusername</code> - Links channel to your group.
+<i>NOTE : You can get your channel ID from @ChannelidHEXbot </i>
+* <code>/del channelid</code>  -  Delinks channel from group
+or
+* <code>/del @channelusername</code>  -  Delinks channel from group
+<i>NOTE : You can get connected channel details by <code>/filterstats</code> </i>
+* <code>/delall</code>  -  Removes all connected channels and filters from group!
+<i>Note : Dont add command delete bots in group! Otherwise, delall command wont work</i>
+* <code>/filterstats</code>  -  Check connected channels and number of filters.
+No need add each filter again!
+Bot will automatically search for your files and give links to that!
+<b>© @TroJanzHEX</b>"""
 
 
-[<ʙ>ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅꜱ - ᴡᴏʀᴋꜱ ɪɴ ɢʀᴏᴜᴘ ᴏɴʟʏ
-(ʏᴏᴜ ɴᴇᴇᴅ ᴛᴏ ʙᴇ ᴀ ᴀᴜᴛʜ ᴜꜱᴇʀ ɪɴ ᴏʀᴅᴇʀ ᴛᴏ ᴜꜱᴇ ᴛʜᴇꜱᴇ ᴄᴏᴍᴍᴀɴᴅꜱ)
-
-* <ᴄᴏᴅᴇ>/ᴀᴅᴅ ᴄʜᴀɴɴᴇʟɪᴅ  -  ʟɪɴᴋꜱ ᴄʜᴀɴɴᴇʟ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ.
-ᴏʀ
-* <ᴄᴏᴅᴇ>/ᴀᴅᴅ @ᴄʜᴀɴɴᴇʟᴜꜱᴇʀɴᴀᴍᴇ - ʟɪɴᴋꜱ ᴄʜᴀɴɴᴇʟ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ.
-
-<ɪ>ɴᴏᴛᴇ : ʏᴏᴜ ᴄᴀɴ ɢᴇᴛ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ɪᴅ ꜰʀᴏᴍ @ᴄʜᴀɴɴᴇʟɪᴅʜᴇxʙᴏᴛ 
-
-
-* <ᴄᴏᴅᴇ>/ᴅᴇʟ ᴄʜᴀɴɴᴇʟɪᴅ  -  ᴅᴇʟɪɴᴋꜱ ᴄʜᴀɴɴᴇʟ ꜰʀᴏᴍ ɢʀᴏᴜᴘ
-ᴏʀ
-* <ᴄᴏᴅᴇ>/ᴅᴇʟ @ᴄʜᴀɴɴᴇʟᴜꜱᴇʀɴᴀᴍᴇ  -  ᴅᴇʟɪɴᴋꜱ ᴄʜᴀɴɴᴇʟ ꜰʀᴏᴍ ɢʀᴏᴜᴘ
-
-<ɪ>ɴᴏᴛᴇ : ʏᴏᴜ ᴄᴀɴ ɢᴇᴛ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴄʜᴀɴɴᴇʟ ᴅᴇᴛᴀɪʟꜱ ʙʏ <ᴄᴏᴅᴇ>/ꜰɪʟᴛᴇʀꜱᴛᴀᴛꜱ 
-
-
-* <ᴄᴏᴅᴇ>/ᴅᴇʟᴀʟʟ  -  ʀᴇᴍᴏᴠᴇꜱ ᴀʟʟ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴄʜᴀɴɴᴇʟꜱ ᴀɴᴅ ꜰɪʟᴛᴇʀꜱ ꜰʀᴏᴍ ɢʀᴏᴜᴘ!
-
-<ɪ>ɴᴏᴛᴇ : ᴅᴏɴᴛ ᴀᴅᴅ ᴄᴏᴍᴍᴀɴᴅ ᴅᴇʟᴇᴛᴇ ʙᴏᴛꜱ ɪɴ ɢʀᴏᴜᴘ! ᴏᴛʜᴇʀᴡɪꜱᴇ, ᴅᴇʟᴀʟʟ ᴄᴏᴍᴍᴀɴᴅ ᴡᴏɴᴛ ᴡᴏʀᴋ
-
-
-* <ᴄᴏᴅᴇ>/ꜰɪʟᴛᴇʀꜱᴛᴀᴛꜱ  -  ᴄʜᴇᴄᴋ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴄʜᴀɴɴᴇʟꜱ ᴀɴᴅ ɴᴜᴍʙᴇʀ ᴏꜰ ꜰɪʟᴛᴇʀꜱ.]
-
-
-
-[ɴᴏ ɴᴇᴇᴅ ᴀᴅᴅ ᴇᴀᴄʜ ꜰɪʟᴛᴇʀ ᴀɢᴀɪɴ!
-ʙᴏᴛ ᴡɪʟʟ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ꜱᴇᴀʀᴄʜ ꜰᴏʀ ʏᴏᴜʀ ꜰɪʟᴇꜱ ᴀɴᴅ ɢɪᴠᴇ ʟɪɴᴋꜱ ᴛᴏ ᴛʜᴀᴛ!
-
-
-<b>© @chakkamanga"""
-
-
-    ᴀʙᴏᴜᴛ_ᴍꜱɢ = """⭕️<b>ᴍʏ ɴᴀᴍᴇ : ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ʙᴏᴛ ᴠ2
+    ABOUT_MSG = """⭕️<b>My Name : Auto Filter Bot V2</b>
     
-⭕️<ʙ>ᴄʀᴇᴀᴛᴇʀ : @chakkamanga
-
-⭕️<ʙ>ʟᴀɴɢᴜᴀɢᴇ : <ᴄᴏᴅᴇ>ᴘʏᴛʜᴏɴ3
-
-⭕️<ʙ>ʟɪʙʀᴀʀʏ : <ᴀ ʜʀᴇꜰ='ʜᴛᴛᴘꜱ://ᴅᴏᴄꜱ.ᴘʏʀᴏɢʀᴀᴍ.ᴏʀɢ/'>ᴘʏʀᴏɢʀᴀᴍ 1.0.7 
-
-⭕️<ʙ>ᴛᴜᴛᴏʀɪᴀʟ ᴠɪᴅᴇᴏ : <ᴀ ʜʀᴇꜰ='ʜᴛᴛᴘꜱ://ʏᴏᴜᴛᴜ.ʙᴇ/ᴋQᴠʏQᴀᴏꜱꜰʏʏ'>ᴠɪᴅᴇᴏ ʟɪɴᴋ 
-
-"""]
+⭕️<b>Creater :</b> @TroJanzHEX
+⭕️<b>Language :</b> <code>Python3</code>
+⭕️<b>Library :</b> <a href='https://docs.pyrogram.org/'>Pyrogram 1.0.7</a> 
+⭕️<b>Tutorial Video :</b> <a href='https://youtu.be/KQVYQAOsFYY'>Video Link</a> 
+"""
